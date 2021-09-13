@@ -11,4 +11,6 @@ exclude =
   __pycache__,
   build,
   dist
+  tests
+  tests_hard
 count = True

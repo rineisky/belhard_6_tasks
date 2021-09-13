@@ -4,12 +4,10 @@
 
 
 Формула:
-
 Tn = 1 / 2 * n * (n + 1)
 
 
 Например:
-
 tn_gen = triangular_numbers()
 
 next(tn_gen) -> 1

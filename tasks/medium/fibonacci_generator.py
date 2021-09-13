@@ -6,7 +6,7 @@
 
 Пример:
 
-fibonacci(0) -> 'Введите значение больше 1'
+fibonacci(0) -> raise ValueError('Введите значение больше 1')
 fibonacci(5)
 1
 2
