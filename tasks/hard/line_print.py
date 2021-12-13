@@ -20,3 +20,9 @@ line_print(some_list)
     3
 8
 """
+
+
+def line_print(some_list, indent=0):
+    for item in some_list:
+        if not isinstance(item, list):
+            pass

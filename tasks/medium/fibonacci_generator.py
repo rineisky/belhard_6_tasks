@@ -20,7 +20,7 @@ StopIteration
 """
 
 
-def fibonacci(n = 0):
+def fibonacci(n=0):
     if n == 0:
         raise ValueError("Введите значение больше 1")
     else:

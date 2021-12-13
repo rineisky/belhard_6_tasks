@@ -15,18 +15,11 @@ add_three(3) # 6
 """
 
 
-def add_numb(numb: int):
-    def inner(n: int):
-        return numb + n
+def add_numb(x):
+    def sname(y):
+        return x + y
 
-    return inner
-
-
-add_two = add_numb(2)
-add_two(3)
-
-if __name__ == '__main__':
-    add_two = add_numb(2)
-    add_two(3)  # 5
+    return sname
 
 
+foo = add_numb(2)

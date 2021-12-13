@@ -12,6 +12,3 @@ def sum_of_numbers(num, res=0):
     res += num % 10
     num //= 10
     return sum_of_numbers(num, res)
-
-
-
