@@ -26,11 +26,11 @@ n = 6:
 """
 
 
-def triangular_sequence(n: int, x=1):
-    if x <= n:
-        print(str(x) * x)
-        triangular_sequence(n, x=x + 1)
-        print
+def triangular_sequence(n, current=1, sequence=""):
+    if current <= n:
+        return triangular_sequence(n, current + 1, sequence + str(current) * current + "\n")
+    else:
+        return sequence
 
 
-triangular_sequence(5)
+print(triangular_sequence(6))

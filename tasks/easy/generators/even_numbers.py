@@ -11,9 +11,8 @@ next(even_gen) -> 6
 """
 
 
-def get_even_number(n):
-    for i in range(1, n):
-        if i % 2 == 0:
-            yield i
-
-
+def get_even_number():
+    current = 0
+    while True:
+        current += 2
+        yield current
