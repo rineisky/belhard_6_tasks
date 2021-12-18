@@ -20,3 +20,11 @@ line_print(some_list)
     3
 8
 """
+
+
+def line_print(some_list, tab=0):
+    for item in some_list:
+        if type(item) == list:
+            line_print(item, tab + 4)
+        else:
+            print(" " * tab + str(item))
