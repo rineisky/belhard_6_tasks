@@ -20,3 +20,11 @@ line_print(some_list)
     3
 8
 """
+
+
+def line_print(some_list, ident=0):
+    for i in some_list:
+        if not isinstance(i, list):
+            print(" " * ident * 4 + str(i))
+        else:
+            line_print(i, ident + 1)
